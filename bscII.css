@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Montagu Slab', serif;
 }
+
 h1,h2,p,h3
 {
     text-align: center;
@@ -46,9 +47,9 @@ a
     background: black;
     text-decoration: none;
     color: #f3ca20;
-    padding: 8px;
+    padding: 4px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 3px;
     border: 1.5px solid white;
     transition: 0.5s;
     
@@ -62,11 +63,16 @@ a:hover
     
 }
 @media only screen and (min-width:600px)
-{
+{ 
     .bsc1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  a
     {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        padding: 8px;
+        margin: 5px;
     }
 }
