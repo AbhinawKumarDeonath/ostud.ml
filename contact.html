@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@600&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>contact us</title>
+</head>
+<body>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+        body
+        {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box
+        {
+            background: white;
+            width: 90vw;
+            margin-top: 25px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          
+        }
+        h1
+        {
+            padding: 20px;
+            font-size: 50px;
+            color: tomato;
+        }
+        h2
+        {
+            padding: 10px;
+            font-size: 25px;
+        }
+        .contact-form
+        {
+            margin-top: 20px;
+            margin-bottom: 20px;
+    
+        }
+        .form-control
+        {
+            border-color: white;
+            border-radius: 20px;
+            height: 45px;
+            width: 400px;
+            margin: 20px;
+            background: black;
+            color: white;
+        }
+        input.form-control.submit
+        {
+            background: black;
+        
+        }
+        input.form-control.submit:hover
+        {
+            background: rgb(228, 138, 64);
+        }
+     
+        @media only screen and (max-width: 768px)
+        {
+            h1 
+            {
+                font-size: 30px;
+            }
+            h2 
+            {
+                font-size: 20px;
+            }
+            .form-control
+            {
+                 width: 250px;
+            }
+
+        }
+    </style>
+    
+        <div class="box">
+          
+            <h1>CONTACT US</h1>
+           
+            <h2>We're here to help and answer any quesetion you might <br> have. We look forward to hearing from you.</h2>
+        
+           <div class="contact-form">
+           <form id="contact-form" method="post" action="contact.php">
+               <input name="name" type="text" class="form-control" placeholder="Your Name" required> <br>
+               <input name="email" type="email" class="form-control" placeholder="Your Email" required> <br>
+
+               <textarea name="message" class="form-control" placeholder="Your Message"  id="" cols="30" rows="4"></textarea><br>
+               
+               <input type="submit" class="form-control submit" value="SEND" >
+
+           </form>
+            </div>
+        </div>
+
+</body>
+</html>
